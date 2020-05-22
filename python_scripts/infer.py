@@ -121,4 +121,4 @@ if __name__ == '__main__':
 
     pdb.set_trace()
 
-    get_openpose_from_fp("../../../examples/media/COCO_val2014_000000000241.jpg")
+    get_openpose_from_fp(fp_img)
