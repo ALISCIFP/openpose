@@ -1,0 +1,2 @@
+sudo docker build -t pyopenpose -f docker/Dockerfile .
+sudo docker run -it --gpus 0 -p 3000:3000 --rm pyopenpose
