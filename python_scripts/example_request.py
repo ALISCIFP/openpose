@@ -15,8 +15,9 @@ fp_img = "/export/zs/s2g/oliver_face70_AJ/test_img/Alex_Jones_-_Last_Week_Tonigh
 base64_bytes = base64_from_fp(fp_img)
 r = requests.post("http://localhost:3000/openpose", data=base64_bytes)
 print(r.content)
+
 # json_object = json.dumps(r.content)
-#
-# # Writing to sample.json
-# with open("sample.json", "w") as outfile:
-#     outfile.write(json_object)
+
+# Writing to sample.json
+with open('data.json', 'w') as f:
+    json.dump(r.json(), f)
