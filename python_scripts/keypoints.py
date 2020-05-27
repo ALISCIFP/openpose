@@ -27,7 +27,7 @@ NumFrames = len(frames)
 print('----------------- All Loaded -----------------', NumFrames)
 n = 0
 while n <= NumFrames:
-	print (n)
+    print(n)
     base64_bytes = base64_from_fp(frames[n])
     r = requests.post("http://localhost:3000/openpose", data=base64_bytes)
 
