@@ -37,7 +37,6 @@ while n <= NumFrames:
     frame_name = frames[n]
     filebase_name = os.path.basename(frame_name)
     filebase_name = filebase_name.split(".")[0]
-
     key_name = frame_name.replace("frames", "keypoints_all")
     keypoints_name = key_name.replace('.jpg',"_keypoints.json")
     with open('data.json', 'w') as f:
