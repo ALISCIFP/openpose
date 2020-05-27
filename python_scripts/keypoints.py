@@ -1,7 +1,7 @@
 import base64
 import json
 import requests
-
+import os
 
 def base64_from_fp(fp_img):
     with open(fp_img, "rb") as fid:
