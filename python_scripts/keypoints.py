@@ -48,7 +48,7 @@ def main(args):
 
 
 if __name__ == "__main__":
-    print('RUN sudo docker run -it --gpus 0 -p 3000:3000 --rm pyopenpse First' )
+    print('RUN sudo docker run --network=host -it --gpus 0 -p 3000:3000 --rm pyopenpse First' )
     print( "Start Keypoints script ...")
 
     parser = argparse.ArgumentParser(description="Video2Frames converter")
